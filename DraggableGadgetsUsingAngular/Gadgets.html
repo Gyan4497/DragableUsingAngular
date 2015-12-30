@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="angularscript.js"></script>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <div ng-controller="MyCtrl">
+        <input type="number" ng-model="divleft" />
+        <input type="number" ng-model="divtop" />
+        {{divleft}}, {{divtop}}
+        <input type="number" ng-model="divleft2" />
+        <input type="number" ng-model="divtop2" />
+        {{divleft2}}, {{divtop2}}
+
+        <div class="examplediv" ng-style="{left: divleft, top: divtop, width: divwidth, height: divheight}" draggable xpos="divleft" ypos="divtop">
+            Gyan Prakash.
+        </div>
+        <div class="examplediv" ng-style="{left: divleft2, top: divtop2, width: divwidth, height: divheight}" draggable xpos="divleft2" ypos="divtop2">
+            runt mollit anim id est laborum.
+        </div>
+    </div>
+
+
+</body>
+</html>
